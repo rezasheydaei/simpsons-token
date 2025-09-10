@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Simpsons Coin is a fun, community-driven meme token inspired by The Simpsons. Join the crypto wave and buy now!" />
+  <meta name="keywords" content="Simpsons Coin, meme coin, cryptocurrency, The Simpsons, Solana, blockchain" />
+  <meta name="author" content="Simpsons Coin Team" />
+  <title>Simpsons Coin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Comic Neue', sans-serif;
+      margin: 0;
+      background-image: url('background-simpsons/smp2.jpg'); /* پس‌زمینه آبی نیلی */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    #chat-messages {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+    .chat-message {
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: #e0f7fa;
+    }
+    .chat-message span {
+      font-weight: bold;
+    }
+    .image-section {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ffcc00;
+      border-radius: 10px;
+    }
+    .text-section {
+      font-size: 1.2em;
+      color: #333;
+      line-height: 1.6;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    section {
+      padding: 40px 0; /* فاصله عمودی بین بخش‌ها */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-yellow-400 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center">
+        <img src="smp.jpg" alt="Simpsons Coin Logo" class="h-12 mr-2">
+        <h1 class="text-2xl font-bold text-gray-900">Simpsons Coin 🚀</h1>
+      </div>
+      <nav class="hidden md:flex space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#howtobuy" class="hover:underline">How to Buy</a>
+        <a href="#roadmap" class="hover:underline">Roadmap</a>
+        <a href="#community" class="hover:underline">Community</a>
+        <a href="#chat" class="hover:underline">Chat</a>
+      </nav>
+      <button class="md:hidden" onclick="toggleMenu()">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden flex-col space-y-2 bg-yellow-400 p-4">
+      <a href="#about" class="hover:underline">About</a>
+      <a href="#howtobuy" class="hover:underline">How to Buy</a>
+      <a href="#roadmap" class="hover:underline">Roadmap</a>
+      <a href="#community" class="hover:underline">Community</a>
+      <a href="#chat" class="hover:underline">Chat</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Simpsons Coin</h2>
+    <p class="text-lg mb-6">A fun and exciting meme coin inspired by The Simpsons on Solana! 🌍💎</p>
+    <div class="flex justify-center space-x-4">
+      <a href="#howtobuy" class="bg-gray-900 text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-gray-800">Buy Now</a>
+      <a href="#" onclick="connectWallet()" class="bg-gray-900 text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-gray-800">Connect Wallet</a>
+    </div>
+  </section>
+
+  <!-- About -->
+<section id="about" class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold mb-6">About Simpsons Coin</h3>
+    <p class="text-lg leading-relaxed">
+      Simpsons Coin is a community-driven meme token created on the Solana blockchain for fun, entertainment,
+      and global fan engagement. With a vibrant community and strong growth potential,
+      Simpsons Coin is here to ride the next big crypto wave! 🚀
+    </p>
+  </section>
+
+  <!-- How to Buy -->
+  <section id="howtobuy" class="bg-white py-16 px-6">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold mb-6">How to Buy</h3>
+      <ol class="list-decimal list-inside space-y-2 text-lg">
+        <li>Set up a crypto wallet (e.g., Phantom).</li>
+        <li>Buy some SOL from your exchange of choice.</li>
+        <li>Connect your wallet to a DEX (like Raydium or Orca).</li>
+        <li>
+          Paste the Simpsons Coin contract address:
+          <code class="bg-gray-100 p-1 rounded">0x123... (Replace with actual address)</code>
+          <button onclick="copyToClipboard('0x123...')" class="ml-2 bg-gray-900 text-white px-2 py-1 rounded">Copy</button>
+        </li>
+        <li>Swap and join the Simpsons Coin family!</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section id="roadmap" class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold mb-6">Roadmap</h3>
+    <ul class="space-y-4 text-lg">
+      <li>✅ Launch Simpsons Coin on Solana</li>
+      <li>✅ Build community on Telegram & Twitter</li>
+      <li>🚀 List on DEX (Raydium/Orca)</li>
+      <li>🌍 Grow global fanbase</li>
+      <li>💎 Major exchange listings</li>
+    </ul>
+  </section>
+
+  <!-- Community -->
+  <section id="community" class="bg-yellow-100 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Join Our Community</h3>
+    <p class="mb-6">Stay connected and be part of the Simpsons Coin family!</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://t.me/+tHHXQCMebfQ2MjY0" class="text-2xl" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+      <a href="https://x.com/RezaSheydaei" class="text-2xl" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://discord.gg/simpsonscoin" class="text-2xl" title="Discord"><i class="fab fa-discord"></i></a>
+    </div>
+  </section>
+
+  <!-- Image and Text Section -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <div class="image-section">
+        <img src="reza.jpg" alt="Simpsons Character with SMP Coin">
+      </div>
+      <div class="text-section">
+        <p>Welcome to Simpsons Coin! This epic image showcases the power of the SMP token with a giant Simpsons character. Each SMP coin makes you part of this fun and dynamic family on the Solana blockchain. Now is the time to join this adventure! 🚀</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat -->
+  <section id="chat" class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center">Chat with the Simpsons Coin Community</h3>
+    <p class="text-lg mb-6 text-center">Have questions or want to connect? Chat with us and the community!</p>
+    <div class="max-w-2xl mx-auto">
+      <div id="chat-messages" class="mb-4"></div>
+      <div class="flex space-x-2">
+        <input id="chat-username" type="text" placeholder="Your name" class="flex-1 p-2 rounded border border-gray-300">
+        <input id="chat-message" type="text" placeholder="Type your message..." class="flex-1 p-2 rounded border border-gray-300">
+        <button onclick="sendMessage()" class="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-800">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Simpsons Coin. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        if (menu) menu.classList.toggle('hidden');
+      }
+function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+          alert('Contract address copied to clipboard!');
+        }).catch(err => {
+          console.error('Failed to copy:', err);
+        });
+      }
+
+      async function connectWallet() {
+        if (window.solana && window.solana.isPhantom) {
+          try {
+            await window.solana.connect();
+            alert('Wallet connected!');
+          } catch (error) {
+            console.error('Wallet error:', error);
+            alert('Error connecting wallet: ' + error.message);
+          }
+        } else {
+          alert('Please install Phantom wallet!');
+        }
+      }
+
+      function sendMessage() {
+        const usernameInput = document.getElementById('chat-username');
+        const messageInput = document.getElementById('chat-message');
+        const chatMessages = document.getElementById('chat-messages');
+
+        if (!usernameInput || !messageInput || !chatMessages) {
+          console.error('Chat elements not found');
+          alert('Chat system error. Please refresh the page.');
+          return;
+        }
+
+        const username = usernameInput.value.trim() || 'Anonymous';
+        const message = messageInput.value.trim();
+
+        if (message) {
+          const messageDiv = document.createElement('div');
+          messageDiv.className = 'chat-message';
+          messageDiv.innerHTML = <span>${username}:</span> ${message};
+          chatMessages.appendChild(messageDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+          messageInput.value = '';
+        } else {
+          alert('Please enter a message!');
+        }
+      }
+
+      const messageInput = document.getElementById('chat-message');
+      if (messageInput) {
+        messageInput.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') sendMessage();
+        });
+      }
+
+      const menuButton = document.querySelector('button[onclick="toggleMenu()"]');
+      if (menuButton) menuButton.addEventListener('click', toggleMenu);
+    });
+  </script>
+</body>
+</html>
