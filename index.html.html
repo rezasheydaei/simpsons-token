@@ -14,7 +14,7 @@
     body {
       font-family: 'Comic Neue', sans-serif;
       margin: 0;
-      background-image: url('smp2.jpg'); /* پس‌زمینه آبی نیلی */
+      background-image: url('smp2.jpg'); /* مسیر درست بک‌گراند */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -67,7 +67,7 @@
   <header class="bg-yellow-400 shadow-lg">
     <div class="container mx-auto flex justify-between items-center p-4">
       <div class="flex items-center">
-        <img src="smp.jpg" alt="Simpsons Coin Logo" class="h-12 mr-2">
+        <img src="smp.jpg" alt="Simpsons Coin Logo" class="h-12 mr-2"> <!-- مسیر درست لوگو -->
         <h1 class="text-2xl font-bold text-gray-900">Simpsons Coin 🚀</h1>
       </div>
       <nav class="hidden md:flex space-x-4">
@@ -101,7 +101,7 @@
   </section>
 
   <!-- About -->
-<section id="about" class="container mx-auto py-16 px-6">
+  <section id="about" class="container mx-auto py-16 px-6">
     <h3 class="text-3xl font-bold mb-6">About Simpsons Coin</h3>
     <p class="text-lg leading-relaxed">
       Simpsons Coin is a community-driven meme token created on the Solana blockchain for fun, entertainment,
@@ -155,7 +155,7 @@
   <section class="py-16">
     <div class="container mx-auto">
       <div class="image-section">
-        <img src="reza.jpg" alt="Simpsons Character with SMP Coin">
+        <img src="reza.jpg" alt="Simpsons Character with SMP Coin"> <!-- مسیر درست تصویر اصلی -->
       </div>
       <div class="text-section">
         <p>Welcome to Simpsons Coin! This epic image showcases the power of the SMP token with a giant Simpsons character. Each SMP coin makes you part of this fun and dynamic family on the Solana blockchain. Now is the time to join this adventure! 🚀</p>
@@ -169,85 +169,4 @@
     <p class="text-lg mb-6 text-center">Have questions or want to connect? Chat with us and the community!</p>
     <div class="max-w-2xl mx-auto">
       <div id="chat-messages" class="mb-4"></div>
-      <div class="flex space-x-2">
-        <input id="chat-username" type="text" placeholder="Your name" class="flex-1 p-2 rounded border border-gray-300">
-        <input id="chat-message" type="text" placeholder="Type your message..." class="flex-1 p-2 rounded border border-gray-300">
-        <button onclick="sendMessage()" class="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-800">Send</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2025 Simpsons Coin. All rights reserved.</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      function toggleMenu() {
-        const menu = document.getElementById('mobile-menu');
-        if (menu) menu.classList.toggle('hidden');
-      }
-function copyToClipboard(text) {
-        navigator.clipboard.writeText(text).then(() => {
-          alert('Contract address copied to clipboard!');
-        }).catch(err => {
-          console.error('Failed to copy:', err);
-        });
-      }
-
-      async function connectWallet() {
-        if (window.solana && window.solana.isPhantom) {
-          try {
-            await window.solana.connect();
-            alert('Wallet connected!');
-          } catch (error) {
-            console.error('Wallet error:', error);
-            alert('Error connecting wallet: ' + error.message);
-          }
-        } else {
-          alert('Please install Phantom wallet!');
-        }
-      }
-
-      function sendMessage() {
-        const usernameInput = document.getElementById('chat-username');
-        const messageInput = document.getElementById('chat-message');
-        const chatMessages = document.getElementById('chat-messages');
-
-        if (!usernameInput || !messageInput || !chatMessages) {
-          console.error('Chat elements not found');
-          alert('Chat system error. Please refresh the page.');
-          return;
-        }
-
-        const username = usernameInput.value.trim() || 'Anonymous';
-        const message = messageInput.value.trim();
-
-        if (message) {
-          const messageDiv = document.createElement('div');
-          messageDiv.className = 'chat-message';
-          messageDiv.innerHTML = <span>${username}:</span> ${message};
-          chatMessages.appendChild(messageDiv);
-          chatMessages.scrollTop = chatMessages.scrollHeight;
-          messageInput.value = '';
-        } else {
-          alert('Please enter a message!');
-        }
-      }
-
-      const messageInput = document.getElementById('chat-message');
-      if (messageInput) {
-        messageInput.addEventListener('keypress', (e) => {
-          if (e.key === 'Enter') sendMessage();
-        });
-      }
-
-      const menuButton = document.querySelector('button[onclick="toggleMenu()"]');
-      if (menuButton) menuButton.addEventListener('click', toggleMenu);
-    });
-  </script>
-</body>
-
-</html>
+      <div class
