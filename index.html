@@ -46,30 +46,32 @@
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-yellow-400 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="flex items-center">
-        <img src="smp.jpg" alt="Simpsons Coin Logo" class="h-12 mr-2">
-        <h1 class="text-2xl font-bold text-gray-900">Simpsons Coin 🚀</h1>
-      </div>
-      <nav class="hidden md:flex space-x-4">
-        <a href="#about" class="hover:underline">About</a>
-        <a href="#howtobuy" class="hover:underline">How to Buy</a>
-        <a href="#roadmap" class="hover:underline">Roadmap</a>
-        <a href="#community" class="hover:underline">Community</a>
-      </nav>
-      <button class="md:hidden" onclick="toggleMenu()">
-        <i class="fas fa-bars text-2xl"></i>
-      </button>
+<!-- Header -->
+<header class="bg-yellow-400 shadow-lg">
+  <div class="container mx-auto flex justify-between items-center p-4">
+    <div class="flex items-center">
+      <img src="smp.jpg" alt="Simpsons Coin Logo" class="h-12 mr-2">
+      <h1 class="text-2xl font-bold text-gray-900">Simpsons Coin 🚀</h1>
     </div>
-    <nav id="mobile-menu" class="hidden md:hidden flex-col space-y-2 bg-yellow-400 p-4">
+    <nav class="hidden md:flex space-x-4">
       <a href="#about" class="hover:underline">About</a>
       <a href="#howtobuy" class="hover:underline">How to Buy</a>
       <a href="#roadmap" class="hover:underline">Roadmap</a>
       <a href="#community" class="hover:underline">Community</a>
+      <a href="whitepaper.html" class="hover:underline font-bold text-red-600">Whitepaper</a>
     </nav>
-  </header>
+    <button class="md:hidden" onclick="toggleMenu()">
+      <i class="fas fa-bars text-2xl"></i>
+    </button>
+  </div>
+  <nav id="mobile-menu" class="hidden md:hidden flex-col space-y-2 bg-yellow-400 p-4">
+    <a href="#about" class="hover:underline">About</a>
+    <a href="#howtobuy" class="hover:underline">How to Buy</a>
+    <a href="#roadmap" class="hover:underline">Roadmap</a>
+    <a href="#community" class="hover:underline">Community</a>
+    <a href="whitepaper.html" class="hover:underline font-bold text-red-600">Whitepaper</a>
+  </nav>
+</header>
 
   <!-- Hero -->
   <section class="text-center py-20">
@@ -193,3 +195,4 @@
 
 </body>
 </html>
+
