@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Simpsons Coin — وایت‌پیپر</title>
-  <meta name="description" content="وایت‌پیپر Simpsons Coin — اهداف، توکنومیکس، نقشه راه و تیم" />
+  <title>Simpsons Coin — Whitepaper</title>
+  <meta name="description" content="Simpsons Coin Whitepaper — Goals, Tokenomics, Roadmap, and Team" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
   <style>
@@ -18,17 +18,19 @@
       background-repeat: no-repeat;
       color: #111827;
     }
-    .content-box {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 12px;
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
       margin-bottom: 24px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 24px;
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    table th, table td {
+      padding: 12px;
     }
   </style>
 </head>
@@ -36,118 +38,119 @@
 
   <!-- Header -->
   <header class="bg-yellow-400 shadow">
-    <div class="container flex items-center justify-between">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
       <div class="flex items-center gap-3">
-        <img src="smp.jpg" alt="logo" class="h-10">
-        <h1 class="text-xl font-bold">Simpsons Coin — وایت‌پیپر</h1>
+        <img src="smp.jpg" alt="Simpsons Coin logo" class="h-12">
+        <h1 class="text-2xl font-bold">Simpsons Coin — Whitepaper</h1>
       </div>
-      <nav class="hidden md:flex gap-4">
-        <a href="index.html" class="hover:underline">خانه</a>
-        <a href="whitepaper.html" class="font-semibold underline">وایت‌پیپر</a>
-        <a href="https://t.me/+tHHXQCMebfQ2MjY0" target="_blank" rel="noopener">تلگرام</a>
+      <nav class="hidden md:flex gap-6">
+        <a href="index.html" class="hover:underline font-medium">Home</a>
+        <a href="whitepaper.html" class="font-semibold underline">Whitepaper</a>
+        <a href="https://t.me/+tHHXQCMebfQ2MjY0" target="_blank" rel="noopener" class="font-medium">Telegram</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section>
-    <div class="container text-center py-10 content-box">
-      <h2 class="text-3xl font-bold mb-2">وایت‌پیپر Simpsons Coin</h2>
-      <p class="text-gray-700 mb-4">اهداف، توکنومیکس، نقشه راه و تیم را بخوانید. نسخه PDF نیز برای دانلود در دسترس است.</p>
-      <a href="whitepaper.pdf" class="px-5 py-3 bg-gray-900 text-white rounded-lg shadow" download>دانلود PDF وایت‌پیپر</a>
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6">
+    <div class="max-w-3xl mx-auto card">
+      <h2 class="text-4xl font-bold mb-4">Simpsons Coin Whitepaper</h2>
+      <p class="text-gray-700 mb-6 text-lg">Explore our goals, tokenomics, roadmap, and team. Download the full PDF version for detailed insights.</p>
+      <a href="whitepaper.pdf" class="inline-block px-6 py-3 bg-gray-900 text-white font-semibold rounded-lg shadow-lg hover:bg-gray-800 transition">Download PDF Whitepaper</a>
     </div>
   </section>
 
   <!-- Main Content -->
-  <main class="container py-8">
+  <main class="max-w-5xl mx-auto px-6 pb-16">
 
-    <!-- خلاصه -->
-    <article id="summary" class="content-box">
-      <h2 class="text-2xl font-bold mb-2">خلاصه اجرایی</h2>
-      <p>Simpsons Coin (SMP) یک توکن میم‌محور در بلاک‌چین سولانا است. هدف این پروژه ترکیب سرگرمی، جامعه‌محوری و رشد بلندمدت است. این وایت‌پیپر اصول، توکنومیکس و نقشه راه پروژه را توضیح می‌دهد.</p>
+    <!-- Executive Summary -->
+    <article id="summary" class="card">
+      <h2 class="text-3xl font-bold mb-4">Executive Summary</h2>
+      <p class="text-gray-800 text-lg">Simpsons Coin (SMP) is a meme-focused token on the Solana blockchain. The project combines entertainment, community engagement, and long-term growth. This whitepaper outlines the principles, tokenomics, and roadmap of the project.</p>
     </article>
 
-    <!-- توکنومیکس -->
-    <article id="tokenomics" class="content-box">
-      <h2 class="text-2xl font-bold mb-2">توکنومیکس</h2>
-      <table class="table-auto w-full border border-gray-300 text-center">
-        <thead class="bg-yellow-200">
-          <tr>
-            <th class="border px-4 py-2">بخش</th>
-            <th class="border px-4 py-2">درصد</th>
-            <th class="border px-4 py-2">توضیحات</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border px-4 py-2">عرضه عمومی</td>
-            <td class="border px-4 py-2">40%</td>
-            <td class="border px-4 py-2">قابل خرید توسط جامعه</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">بازاریابی</td>
-            <td class="border px-4 py-2">20%</td>
-            <td class="border px-4 py-2">کمپین تبلیغاتی و لیست شدن در صرافی‌ها</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">تیم توسعه</td>
-            <td class="border px-4 py-2">15%</td>
-            <td class="border px-4 py-2">قفل 12 ماهه</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">لیکوئیدیتی</td>
-            <td class="border px-4 py-2">15%</td>
-            <td class="border px-4 py-2">تضمین ثبات بازار</td>
-          </tr>
-          <tr>
-            <td class="border px-4 py-2">پاداش جامعه</td>
-            <td class="border px-4 py-2">10%</td>
-            <td class="border px-4 py-2">ایردراپ، مسابقات و پاداش کاربران فعال</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Tokenomics -->
+    <article id="tokenomics" class="card">
+      <h2 class="text-3xl font-bold mb-4">Tokenomics</h2>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border border-gray-300 text-center rounded-lg overflow-hidden">
+          <thead class="bg-yellow-200 text-gray-800">
+            <tr>
+              <th class="border-b border-gray-300">Category</th>
+              <th class="border-b border-gray-300">Percentage</th>
+              <th class="border-b border-gray-300">Description</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="hover:bg-gray-100 transition">
+              <td class="border-b border-gray-200">Public Sale</td>
+              <td class="border-b border-gray-200">40%</td>
+              <td class="border-b border-gray-200">Available for community purchase</td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition">
+              <td class="border-b border-gray-200">Marketing</td>
+              <td class="border-b border-gray-200">20%</td>
+              <td class="border-b border-gray-200">Advertising campaigns and exchange listings</td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition">
+              <td class="border-b border-gray-200">Development Team</td>
+              <td class="border-b border-gray-200">15%</td>
+              <td class="border-b border-gray-200">12-month vesting period</td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition">
+              <td class="border-b border-gray-200">Liquidity</td>
+              <td class="border-b border-gray-200">15%</td>
+              <td class="border-b border-gray-200">Ensuring market stability</td>
+            </tr>
+            <tr class="hover:bg-gray-100 transition">
+              <td>Community Rewards</td>
+              <td>10%</td>
+              <td>Airdrops, contests, and rewards for active users</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </article>
-<!-- نقشه راه -->
-    <article id="roadmap" class="content-box">
-      <h2 class="text-2xl font-bold mb-2">نقشه راه</h2>
-      <ul class="list-disc pr-6 space-y-2">
-        <li>فاز ۱: ایجاد جامعه و لانچ اولیه روی سولانا ✅</li>
-        <li>فاز ۲: لیست شدن در DEX مانند Raydium و Orca 🚀</li>
-        <li>فاز ۳: راه‌اندازی کمپین‌های تبلیغاتی و همکاری با اینفلوئنسرها 🌍</li>
-        <li>فاز ۴: لیست شدن در صرافی‌های بزرگ (CEX) 💎</li>
-        <li>فاز ۵: گسترش اکوسیستم و لانچ NFT 🎨</li>
+
+    <!-- Roadmap -->
+    <article id="roadmap" class="card">
+      <h2 class="text-3xl font-bold mb-4">Roadmap</h2>
+      <ul class="list-disc pl-6 space-y-3 text-gray-800 text-lg">
+        <li>Phase 1: Community building and initial launch on Solana ✅</li>
+        <li>Phase 2: Listing on DEX like Raydium and Orca 🚀</li>
+        <li>Phase 3: Marketing campaigns and influencer collaborations 🌍</li>
+        <li>Phase 4: Listing on major exchanges (CEX) 💎</li>
+        <li>Phase 5: Ecosystem expansion and NFT launch 🎨</li>
       </ul>
     </article>
 
-    <!-- تیم -->
-    <article id="team" class="content-box">
-      <h2 class="text-2xl font-bold mb-2">تیم توسعه</h2>
-      <p>تیم Simpsons Coin متشکل از علاقه‌مندان به بلاک‌چین، برنامه‌نویسان و بازاریابان بین‌المللی است که هدفشان ایجاد یک پروژه سرگرم‌کننده و پایدار می‌باشد.</p>
+    <!-- Team -->
+    <article id="team" class="card">
+      <h2 class="text-3xl font-bold mb-4">Development Team</h2>
+      <p class="text-gray-800 text-lg">The Simpsons Coin team consists of blockchain enthusiasts, developers, and international marketers dedicated to creating a fun, sustainable, and engaging project.</p>
     </article>
 
   </main>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white">
-    <div class="container py-6 text-center">
-      <p>© 2025 Simpsons Coin — همه حقوق محفوظ است.</p>
+    <div class="max-w-5xl mx-auto py-8 px-6 text-center">
+      <p>© 2025 Simpsons Coin — All rights reserved.</p>
     </div>
   </footer>
 
   <!-- Tawk.to Chat -->
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
   (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/68c245ea6f5b67192497e044/1j4re27sl';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/68c245ea6f5b67192497e044/1j4re27sl';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
   })();
   </script>
-  <!--End of Tawk.to Script-->
 
 </body>
 </html>
