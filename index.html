@@ -158,11 +158,24 @@
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
         alert('Contract address copied to clipboard!');
-      }).catch(err =>
-      <!-- Footer -->
-  <footer class="bg-gray-900 text-white text-center py-6">
-    <p>&copy; 2025 Simpsons Coin. All rights reserved.</p>
-  </footer>
+      }).catch(err => {
+        console.error('Failed to copy:', err);
+      });
+    }
+    async function connectWallet() {
+      if (window.solana && window.solana.isPhantom) {
+        try {
+          await window.solana.connect();
+          alert('Wallet connected!');
+        } catch (error) {
+          console.error('Wallet error:', error);
+          alert('Error connecting wallet: ' + error.message);
+        }
+      } else {
+        alert('Please install Phantom wallet!');
+      }
+    }
+  </script>
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -180,5 +193,3 @@
 
 </body>
 </html>
-
-
