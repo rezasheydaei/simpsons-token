@@ -1,25 +1,4 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Test Tawk.to</h1>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-  var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/68c245ea6f5b67192497e044/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-</body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -179,47 +158,4 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
         alert('Contract address copied to clipboard!');
-      }).catch(err => {
-        console.error('Failed to copy:', err);
-      });
-    }
-    async function connectWallet() {
-      if (window.solana && window.solana.isPhantom) {
-        try {
-          await window.solana.connect();
-          alert('Wallet connected!');
-        } catch (error) {
-          console.error('Wallet error:', error);
-          alert('Error connecting wallet: ' + error.message);
-        }
-      } else {
-        alert('Please install Phantom wallet!');
-      }
-    }
-  </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Test Tawk.to</h1>
-
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-  var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/5b95e0ae01dbf6698e74e1de4fc9d463d8c9378d/default';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
-</body>
-</html>
-
-
+      }).catch(err =>
