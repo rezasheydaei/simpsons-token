@@ -16,8 +16,22 @@
       background-position: center;
       background-repeat: no-repeat;
     }
-    .image-section img { max-width:100%; height:auto; border:2px solid #ffcc00; border-radius:10px; }
-    .text-section { font-size:1.1rem; color:#111; background:#fff; padding:16px; border-radius:8px; max-width:900px; margin:16px auto; box-shadow:0 4px 14px rgba(0,0,0,0.08); }
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ffcc00;
+      border-radius: 10px;
+    }
+    .text-section {
+      font-size: 1.1rem;
+      color: #111;
+      background: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: 16px auto;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
   </style>
 </head>
 <body>
@@ -45,34 +59,6 @@
       </button>
     </div>
 
-<!-- Community Section -->
-<section class="py-16 px-6 bg-yellow-50">
-  <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
-<!-- Raffle CTA Link -->
-<div class="mt-8 text-center">
-  <a href="raffle.html" class="inline-block px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-2xl shadow-lg hover:underline">
-    Participate in Raffle → (Join the Raffle)
-  </a>
-</div>
-    
-    <!-- Image -->
-    <div class="flex-1">
-      <img src="smp3.jpg" alt="Simpsons Coin Family" class="rounded-2xl shadow-lg border-4 border-yellow-400">
-    </div>
-
-    <!-- Text -->
-    <div class="flex-1 text-center md:text-left">
-      <h3 class="text-3xl font-bold mb-4">Join Our Family</h3>
-      <p class="text-lg leading-relaxed text-gray-800">
-        To achieve our great goals, we need to build a large and strong family, 
-        of which you are a valuable part. 🌟 <br><br>
-        We will soon unveil special awards for our future activists and companions. 🏆
-      </p>
-    </div>
-
-  </div>
-</section>
-    
     <!-- Mobile Menu (vertical list) -->
     <nav id="mobile-menu" class="hidden md:hidden flex flex-col space-y-4 bg-yellow-400 p-4 text-lg font-bold">
       <a href="#about" class="hover:underline">About</a>
@@ -94,28 +80,29 @@
   </section>
 
   <!-- Presale Announcement -->
-<section class="py-16 px-6 bg-yellow-50">
-  <div class="container mx-auto max-w-3xl text-center">
-    <h3 class="text-3xl font-bold mb-4">📢 Presale Coming Soon</h3>
-    <p class="text-lg text-gray-700 mb-6">
-      The contract address and more details will be revealed soon. Stay tuned for updates!
-    </p>
+  <section class="py-16 px-6 bg-yellow-50">
+    <div class="container mx-auto max-w-3xl text-center">
+      <h3 class="text-3xl font-bold mb-4">📢 Presale Coming Soon</h3>
+      <p class="text-lg text-gray-700 mb-6">
+        The contract address and more details will be revealed soon. Stay tuned for updates!
+      </p>
 
-    <!-- Card -->
-    <div class="inline-block rounded-2xl border-2 border-dashed border-yellow-400 bg-white shadow-md px-6 py-4">
-      <p class="text-sm text-gray-500">Contract Address</p>
-      <p class="font-mono text-xl font-bold text-gray-900 animate-pulse">Coming Soon</p>
-      <p class="mt-2 font-semibold text-red-600">Please wait</p>
-    </div>
+      <!-- Card -->
+      <div class="inline-block rounded-2xl border-2 border-dashed border-yellow-400 bg-white shadow-md px-6 py-4">
+        <p class="text-sm text-gray-500">Contract Address</p>
+        <p class="font-mono text-xl font-bold text-gray-900 animate-pulse">Coming Soon</p>
+        <p class="mt-2 font-semibold text-red-600">Please wait</p>
+      </div>
 
-    <!-- Button -->
-    <div class="mt-6">
-      <a href="#community" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold shadow hover:bg-yellow-300 transition">
-        Get Updates
-      </a>
+      <!-- Button -->
+      <div class="mt-6">
+        <a href="#community" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-xl font-bold shadow hover:bg-yellow-300 transition">
+          Get Updates
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- About -->
   <section id="about" class="container mx-auto py-16 px-6">
     <h3 class="text-3xl font-bold mb-6">About Simpsons Coin</h3>
@@ -144,8 +131,34 @@
     </ul>
   </section>
 
-  <!-- Community -->
-  <section id="community" class="bg-yellow-100 py-16 px-6 text-center">
+  <!-- Community + Raffle CTA -->
+  <section id="community" class="py-16 px-6 bg-yellow-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
+
+      <!-- Image -->
+      <div class="flex-1">
+        <img src="smp3.jpg" alt="Simpsons Coin Family" class="rounded-2xl shadow-lg border-4 border-yellow-400">
+      </div>
+
+      <!-- Text + CTA -->
+      <div class="flex-1 text-center md:text-left">
+        <h3 class="text-3xl font-bold mb-4">Join Our Family</h3>
+        <p class="text-lg leading-relaxed text-gray-800 mb-6">
+          To achieve our great goals, we need to build a large and strong family, 
+          of which you are a valuable part. 🌟 <br><br>
+          We will soon unveil special awards for our future activists and companions. 🏆
+        </p>
+
+        <!-- Raffle CTA Link -->
+        <a href="raffle.html" class="inline-block px-6 py-3 bg-yellow-400 text-gray-900 font-semibold rounded-2xl shadow-lg hover:underline">
+          Participate in Raffle → (Join the Raffle)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Socials -->
+  <section class="bg-yellow-100 py-16 px-6 text-center">
     <h3 class="text-3xl font-bold mb-6">Join Our Community</h3>
     <p class="mb-6">Stay connected!</p>
     <div class="flex justify-center space-x-6">
@@ -174,37 +187,39 @@
 
   <!-- Scripts -->
   <script>
-    function toggleMenu(){
+    function toggleMenu() {
       const menu = document.getElementById('mobile-menu');
-      if(menu) menu.classList.toggle('hidden');
+      if (menu) menu.classList.toggle('hidden');
     }
-    function copyToClipboard(text){ navigator.clipboard.writeText(text).then(()=>alert('Copied')); }
-    async function connectWallet(){
-      if(window.solana && window.solana.isPhantom){
-        try{ await window.solana.connect(); alert('Wallet connected'); }
-        catch(e){ alert('Wallet error'); }
-      } else alert('Install Phantom wallet');
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text).then(() => alert('Copied'));
+    }
+    async function connectWallet() {
+      if (window.solana && window.solana.isPhantom) {
+        try {
+          await window.solana.connect();
+          alert('Wallet connected');
+        } catch (e) {
+          alert('Wallet error');
+        }
+      } else {
+        alert('Install Phantom wallet');
+      }
     }
   </script>
 
   <!-- Tawk.to (chat) -->
-  <!--Start of Tawk.to Script-->
   <script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/68c245ea6f5b67192497e044/1j4re27sl';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/68c245ea6f5b67192497e044/1j4re27sl';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
   </script>
-  <!--End of Tawk.to Script-->
 
 </body>
 </html>
-
-
-
-
